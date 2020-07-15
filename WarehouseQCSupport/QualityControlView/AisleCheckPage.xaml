@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WarehouseQCSupport.QualityControlView.AisleCheckPage">
+    <ContentPage.Content>
+        <!--<TabbedPage.ToolbarItems>
+        -->
+        <!--<ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked" />-->
+        <!--
+    </TabbedPage.ToolbarItems>-->
+
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+            <Grid Margin="0,0,0,40">
+                <Label  Grid.Row="0" Grid.Column="0" Text="Auditor" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+                <Entry  Grid.Row="0" Grid.Column="1" Placeholder="Enter auditor's name" FontAttributes="Italic" FontSize="Caption"/>
+
+                <Label  Grid.Row="1" Grid.Column="0" Text="Employee" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+                <Entry  Grid.Row="1" Grid.Column="1" Placeholder="Enter employee's name" FontAttributes="Italic" FontSize="Caption"/>
+            </Grid>
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" Text="WAMAS Area" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                <Entry Grid.Row="0" Grid.Column="1" Margin="-50,0,0,0"/>
+            </Grid>
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" Text="Store No" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                <Entry Grid.Row="0" Grid.Column="1" Margin="-50,0,60,0"/>
+            </Grid>
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" Text="Lines Checked" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                <Entry Grid.Row="0" Grid.Column="1" Margin="-50,0,60,0"/>
+            </Grid>
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" Text="Errors Found" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                <Entry Grid.Row="0" Grid.Column="1" Margin="-50,0,60,0"/>
+            </Grid>
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" Text="Comments" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                <Entry Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" WidthRequest="300"/>
+            </Grid>
+            <Grid VerticalOptions="End">
+                <Button Grid.Row="0" Grid.Column="0" Text="&#xf00c;" BackgroundColor="#eb9100" TextColor="#ffffff" CornerRadius="100" Padding="0" FontSize="30">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="&#xf01e;" BackgroundColor="#ffc31e" CornerRadius="100" Padding="0" FontSize="30" TextColor="#fff">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="2" Text="&#xf00d;" BackgroundColor="#ffc31e" CornerRadius="100" Padding="0" FontSize="30" TextColor="#fff">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+                <Button x:Name="readAisleData" Grid.Row="0" Grid.Column="3" Text="&#xf1c0;" BackgroundColor="#ffc31e" CornerRadius="100" Padding="0,23" TextColor="#fff" FontSize="30" Clicked="readAisleData_Clicked">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WarehouseQCSupport.TransportView.NewTransportInfo">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView Orientation="Vertical">
+                <StackLayout Spacing="0" HorizontalOptions="CenterAndExpand" Padding="40,0">
+                    <Grid>
+                        <Image VerticalOptions="Fill" HorizontalOptions="Fill" Aspect="AspectFill" Source="inside.jpg" Margin="0"/>
+                        <!--<BoxView HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#ebebeb" Opacity="0.8"/>-->
+                        <BoxView HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Orange" Opacity="0.8"/>
+                        <Label Text="Store Information" FontSize="35" TextColor="#ffffff" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </Grid>
+                    <Grid>
+                        <Label Grid.Row="0" Grid.Column="0" Text="StoreNo" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="storeNo" Grid.Row="0" Grid.Column="1" />
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="Store Name" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="storeName" Grid.Row="1" Grid.Column="1" />
+
+                        <Label Grid.Row="2" Grid.Column="0" Text="Lanes" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="lanes" Grid.Row="2" Grid.Column="1"/>
+
+                        <Label Grid.Row="3" Grid.Column="0" Text="Veg Count" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="vegCount" Grid.Row="3" Grid.Column="1"/>
+
+                        <Label Grid.Row="4" Grid.Column="0" Text="Total" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="total" Grid.Row="4" Grid.Column="1"/>
+
+                        <Label Grid.Row="5" Grid.Column="0" Text="WH Size" VerticalTextAlignment="Center"/>
+                        <Entry x:Name="whSize" Grid.Row="5" Grid.Column="1"/>
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20">
+                <Button x:Name="AddBtn" 
+                        Text="ad" 
+                        FontSize="20"  
+                        Opacity="1" 
+                        Margin="10,0"
+                        CornerRadius="500"
+                        WidthRequest="60" HeightRequest="60" Clicked="AddBtn_Clicked" />
+                <!--<Button x:Name="AddBtn" 
+                        Text="&#xf00c;" 
+                        FontSize="20"  
+                        Opacity="1" 
+                        Margin="10,0"
+                        CornerRadius="500"
+                        WidthRequest="60" HeightRequest="60" Clicked="AddBtn_Clicked">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>-->
+
+                <Button x:Name="CancelBtn" 
+                        Text="&#xf00d;" 
+                        FontSize="20"  
+                        Opacity="1" 
+                        Margin="10,0"
+                        CornerRadius="500"
+                        WidthRequest="60" HeightRequest="60" Clicked="CancelBtn_Clicked">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+
+                <Button x:Name="ResetBtn" 
+                        Text="&#xf2f9;" 
+                        FontSize="20"  
+                        Opacity="1" 
+                        Margin="10,0"
+                        CornerRadius="500"
+                        WidthRequest="60" HeightRequest="60">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+
+                <Button x:Name="ReadDataBtn" 
+                        Text="&#xf1c0;" 
+                        FontSize="20"  
+                        Opacity="1" 
+                        Margin="10,0"
+                        CornerRadius="500"
+                        WidthRequest="60" HeightRequest="60">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" iOS="Font Awesome 5 Free"/>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+        </Grid>
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

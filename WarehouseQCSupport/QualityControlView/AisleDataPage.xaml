@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WarehouseQCSupport.QualityControlView.AisleDataPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Aisle Data Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+            <Button x:Name="Back" Grid.Row="0" Grid.Column="2" Text="&#xf060;" BackgroundColor="#ffc31e" CornerRadius="100" Padding="26" FontSize="30" TextColor="#fff" HorizontalOptions="End" Clicked="Back_Clicked">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="FontAwesomeSolid900.otf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+                </Button.FontFamily>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

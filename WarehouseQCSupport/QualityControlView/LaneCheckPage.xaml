@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WarehouseQCSupport.QualityControlView.LaneCheckPage">
+    <ScrollView Padding="20">
+        <StackLayout>
+            <Grid Margin="0,0,0,40">
+                <Label  Grid.Row="0" Grid.Column="0" Text="Auditor" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+                <Entry  Grid.Row="0" Grid.Column="1" Placeholder="Enter auditor's name" FontAttributes="Italic" FontSize="Caption"/>
+
+                <Label  Grid.Row="1" Grid.Column="0" Text="Employee" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+                <Entry  Grid.Row="1" Grid.Column="1" Placeholder="Enter employee's name" FontAttributes="Italic" FontSize="Caption"/>
+            </Grid>
+            
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="2" Text="Pass" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="0" Grid.Column="3" Text="Fail" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="0" Grid.Column="4" Text="N/A" FontAttributes="Bold" FontSize="Subtitle"/>
+            </Grid>
+            <Grid>
+                <Label Text="General Checks" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="1" Text="Correct Lane"/>
+                <Picker Grid.Row="1" Grid.Column="2" Title="Pass"  HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="2" Text="Correct Labels"/>
+                <Picker Grid.Row="2" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+                
+                <Label Grid.Row="3" Text="Picked In Flow"/>
+                <Picker Grid.Row="3" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+            </Grid>
+
+            <Grid>
+                <Label Text="Pallet Checks" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="1" Text="Correct Height"/>
+                <Picker Grid.Row="1" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="2" Text="Correctly Wrapped"/>
+                <Picker Grid.Row="2" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="3" Text="Good Stability"/>
+                <Picker Grid.Row="3" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="4" Text="Stock Quality"/>
+                <Picker Grid.Row="4" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="4" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="4" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="5" Text="Correct Pallet Used"/>
+                <Picker Grid.Row="5" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="5" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="5" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+            </Grid>
+
+            <Grid>
+                <Label Text="TKT Checks" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="1" Text="TKT Clean"/>
+                <Picker Grid.Row="1" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="2" Text="TKT Damage"/>
+                <Picker Grid.Row="2" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="3" Text="Eutectic Plates"/>
+                <Picker Grid.Row="3" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="3" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="4" Text="Correctly Sealed"/>
+                <Picker Grid.Row="4" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="4" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="4" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="5" Text="Fully Utilised"/>
+                <Picker Grid.Row="5" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="5" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="5" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+            </Grid>
+
+            <Grid>
+                <Label Text="Misc Checks" FontAttributes="Bold" FontSize="Subtitle"/>
+                <Label Grid.Row="1" Text="ADR Labels"/>
+                <Picker Grid.Row="1" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="1" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+
+                <Label Grid.Row="2" Text="Data Logger"/>
+                <Picker Grid.Row="2" Grid.Column="2" Title="Pass" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="3" Title="Fail" HorizontalOptions="Start"/>
+                <Picker Grid.Row="2" Grid.Column="4" Title="N/A" HorizontalOptions="Start"/>
+            </Grid>
+
+            <Grid>
+                <Button Grid.Row="0" Grid.Column="0" Text="Accept"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Reset"/>
+                <Button Grid.Row="0" Grid.Column="2" Text="Cancel"/>
+                <Button Grid.Row="0" Grid.Column="3" Text="Read"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
